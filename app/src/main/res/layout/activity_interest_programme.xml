@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qiup.programmeenquiry.InterestProgramme">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/interestProgrammeParentLayout">
+
+        <CheckBox
+            android:id="@+id/interestCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/no_interest_programme"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/maxTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/choose_interested_programmes_max_3"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <com.qiup.programmeenquiry.InstantAutoComplete
+            android:id="@+id/interestedProgrammeAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownHeight= "130dp"
+            android:completionThreshold="0"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/if_other_programme_please_specify">
+
+            <EditText
+                android:id="@+id/editOtherProgramme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text|textCapSentences|textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/deleteInterestedProgrammeText"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/delete_interest_programme"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/addInterestedProgrammeText"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/add_more_interest_programme"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/generateResultButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generate" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+

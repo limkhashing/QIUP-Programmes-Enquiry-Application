@@ -1,0 +1,4 @@
+/build
+*.json
+/release
+/debug

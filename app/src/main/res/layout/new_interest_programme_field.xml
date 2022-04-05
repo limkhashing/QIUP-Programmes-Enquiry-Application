@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/newProgrammes">
+
+    <com.qiup.programmeenquiry.InstantAutoComplete
+        android:id="@+id/newInterestedProgrammeAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dropDownHeight= "130dp"
+        android:completionThreshold="0"/>
+
+</LinearLayout>
